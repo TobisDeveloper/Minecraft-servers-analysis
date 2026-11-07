@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CZ/SK — Minecraft Trend Radar</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<div class="app">
+  <header class="topbar"><a href="/" class="brand"><span class="brand-icon" aria-hidden="true">▦</span> RADAR<span class="brand-region">CZ / SK</span></a><span class="edition">MINECRAFT FIELD INTELLIGENCE / v2.0</span><span id="clock">LOCAL RESEARCH STATION</span></header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy"><div class="eyebrow"><span class="square"></span> EARLY SIGNALS. LOCAL OPPORTUNITIES.</div><h1>THE NEXT<br>SERVER<br><span>FORMAT_</span></h1><p>Find what players will want to host.<br>Before everyone else starts selling it.</p><div class="actions"><button class="button primary" id="scan">↗ RUN LIVE SCAN</button><button class="button" id="demo">TRY OFFLINE DEMO</button></div><small>PUBLIC SIGNALS → CZ/SK VALIDATION → HOSTING PLAYBOOK</small></div>
+      <div class="hero-art" aria-hidden="true"><div class="art-cross cross-one">+</div><div class="art-cross cross-two">+</div><div class="pixel-world"><div class="cube top-cube"></div><div class="cube mid-cube"></div><div class="cube low-cube"></div><div class="cube side-cube"></div></div><div class="art-label">SCAN THE CULTURE.<br>BUILD THE OPPORTUNITY.</div><div class="coordinates">48° / 49° N<br>14° / 22° E</div></div>
+    </section>
+    <section class="status-strip" aria-label="Scanner status"><span class="status-dot" id="status-dot"></span><span id="status" role="status" aria-live="polite">Connecting to your local scanner…</span><span class="ai-tag" id="ai-state">LOCAL AI / OPTIONAL</span></section>
+    <section id="empty" class="empty"><div class="section-number">01 / START HERE</div><h2>Evidence, before the hype.</h2><p>A live scan checks creators, search demand, modpacks, server listings and communities. The report shows what worked, what was blocked, and where more evidence is needed.</p><div class="empty-grid"><div><b>01 / COLLECT</b><p>Public data + your authorized feeds. No invented numbers.</p></div><div><b>02 / COMPARE</b><p>Local momentum, creator adoption and historical snapshots.</p></div><div><b>03 / SHIP A PILOT</b><p>An English PDF with evidence, template steps, costs and CZ/SK launch copy.</p></div></div><p class="muted">First run? Try the demo to explore the report. All demo data is synthetic. Live source access depends on the network and optional API keys.</p></section>
+    <section id="results" hidden>
+      <div class="section-heading"><div><span class="section-number">01 / THE WATCHLIST</span><h2>Signal over noise.</h2></div><div class="run-picker"><label for="runs">SCAN ARCHIVE</label><select id="runs" aria-label="Choose scan"></select></div></div>
+      <div id="demo-banner" class="banner" hidden>DEMO / SYNTHETIC DATA — A layout and functionality preview. These are not current market findings.</div>
+      <div class="metrics"><div><span>OBSERVATIONS</span><strong id="metric-items">—</strong><small>Traceable source items</small></div><div><span>COLLECTION HEALTH</span><strong id="metric-health">—</strong><small>Successful / attempted sources</small></div><div><span>PILOT CANDIDATES</span><strong id="metric-pilots">—</strong><small>Evidence gate, not a forecast</small></div><div class="export"><span>FIELD REPORT</span><a id="pdf-link" class="button primary" target="_blank" rel="noopener">↓ ENGLISH PDF</a><div><a id="json-link">JSON ledger</a> / <a id="csv-link">CSV evidence</a></div></div></div>
+      <div class="board"><section class="ranking"><div class="table-head"><span>FORMAT / OPPORTUNITY</span><span>SCORE</span></div><div id="rankings"></div></section><aside id="detail" aria-label="Selected format detail"></aside></div>
+      <section class="health-section"><div class="section-heading"><div><span class="section-number">02 / SHOW YOUR WORK</span><h2>Source transparency.</h2></div><p>Missing data never becomes a positive signal.</p></div><div id="source-list" class="source-grid"></div></section>
+      <section class="evidence-section"><div class="section-heading"><div><span class="section-number">03 / THE RECEIPTS</span><h2>Follow the evidence.</h2></div><label>FILTER BY SOURCE <select id="source-filter"><option value="all">All sources</option></select></label></div><div id="evidence"></div></section>
+    </section>
+  </main>
+  <footer><span>BUILT FOR CZECHIA + SLOVAKIA.</span><span>MEASURE. QUESTION. TEST. REPEAT.</span><span>PRIVATE LOCAL DASHBOARD</span></footer>
+</div>
+</body></html>

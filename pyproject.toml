@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "czsk-minecraft-trendfinder"
+version = "2.0.0"
+description = "Evidence-led Minecraft hosting trend radar for Czechia and Slovakia"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "requests>=2.32,<3",
+  "beautifulsoup4>=4.12,<5",
+  "reportlab>=4.2,<6",
+  "Pillow>=10,<14",
+  "pytrends>=4.9.2,<5",
+  "pandas>=2.2,<3",
+  "yt-dlp>=2025.1",
+]
+
+[project.scripts]
+mc-trendfinder = "trendfinder.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["trendfinder*"]
+
+[tool.setuptools.package-data]
+trendfinder = ["web/*"]

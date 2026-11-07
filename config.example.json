@@ -1,0 +1,104 @@
+{
+  "markets": [
+    "CZ",
+    "SK"
+  ],
+  "sources": [
+    "modrinth",
+    "youtube",
+    "google_trends",
+    "reddit",
+    "server_lists",
+    "reports",
+    "feeds",
+    "imports",
+    "curseforge",
+    "discord"
+  ],
+  "timeout": 15,
+  "days": 90,
+  "youtube": {
+    "backend": "auto",
+    "search_queries": [
+      "Minecraft SMP CZ SK",
+      "Minecraft nový server",
+      "Minecraft modpack",
+      "Minecraft but",
+      "Minecraft civilization"
+    ],
+    "results_per_query": 8,
+    "channel_ids": [],
+    "local_creator_names": [
+      "SirYakari",
+      "GEJMR",
+      "MenT",
+      "House",
+      "Wedry",
+      "StudioMoonTV",
+      "Asimister",
+      "Duklock"
+    ]
+  },
+  "google_trends": {
+    "markets": [
+      "CZ",
+      "SK",
+      "US"
+    ],
+    "timeframe": "today 12-m",
+    "delay_seconds": 2.0
+  },
+  "reddit": {
+    "communities": [
+      "admincraft",
+      "feedthebeast",
+      "Minecraft"
+    ],
+    "limit": 60
+  },
+  "server_lists": [
+    {
+      "name": "Craftlist CZ",
+      "url": "https://craftlist.org/cz/",
+      "market": "CZ"
+    },
+    {
+      "name": "Minecraft MP CZ",
+      "url": "https://minecraft-mp.com/country/czech-republic/",
+      "market": "CZ"
+    },
+    {
+      "name": "Minecraft MP SK",
+      "url": "https://minecraft-mp.com/country/slovakia/",
+      "market": "SK"
+    },
+    {
+      "name": "Minecraft Server List newest",
+      "url": "https://minecraft-server-list.com/sort/New/",
+      "market": "GLOBAL"
+    }
+  ],
+  "feeds": [],
+  "discord_channel_ids": [],
+  "import_dir": "imports",
+  "max_discovered_packs": 5,
+  "max_discovered_formats": 5,
+  "watch_terms": [],
+  "report_top": 5,
+  "ai": {
+    "enabled": false,
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen2.5:3b",
+    "timeout": 120
+  },
+  "economics": {
+    "currency": "EUR",
+    "price_per_month": 12.0,
+    "ram_cost_per_gb": 0.65,
+    "cpu_storage_per_month": 2.0,
+    "support_cost_per_hour": 12.0,
+    "support_minutes_per_month": 10.0,
+    "payment_fee_percent": 3.0,
+    "fixed_fee": 0.3
+  }
+}
